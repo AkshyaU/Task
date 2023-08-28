@@ -5,32 +5,25 @@
 }
 
 body {
+  min-height: 100vh;
   background-color: hsl(225, 100%, 94%);
   background-image: url(../images/pattern-background-desktop.svg);
   background-position: top center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
-
-.main-container {
-  overflow: hidden;
-  width: 400px;
-  height: 600px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-}
-
 .container {
-  background-color: white;
   position: absolute;
-  width: 400px;
-  /* height: 800px; */
-  border-radius: 12px;
-  /* margin-top: 75px; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .bg-card {
-  width: 400px;
+  width: 450px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
